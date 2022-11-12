@@ -116,7 +116,7 @@ input:hover,
       <form action="{{route('login')}}" method="POST">
         @csrf
         <div class="imgcontainer">
-          <h3>Employee Login</h3>
+          <h3>Login</h3>
             {{-- <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span> --}}
             <img src="{{ asset('assets/images/login.gif') }}" alt="Avatar" class="avatar">
         </div>
