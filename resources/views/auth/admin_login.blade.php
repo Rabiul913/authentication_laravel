@@ -116,7 +116,7 @@ input:hover,
       <form action="{{route('login')}}" method="POST">
         @csrf
         <div class="imgcontainer">
-          <h3>Employee Login</h3>
+          <h3>Admin Login</h3>
             {{-- <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span> --}}
             <img src="{{ asset('assets/images/login.gif') }}" alt="Avatar" class="avatar">
         </div>
@@ -138,14 +138,9 @@ input:hover,
         </div>
         <div>
       </form>
-      <div class="text-center">
-                                @if (Route::has('password.request'))
-                                <p> <a class="font-bold" href="{{ route('password.request') }}">
-                                    {{ __('Forgot Your Password?') }}
-                                </a></p>
-                                   
-                                @endif
-        </div>
+            <a href="{{ route('register') }}" class="google btn"><i class="fa fa-google fa-fw">
+                </i> Sign In
+            </a>
             <a href="#" class="google btn"><i class="fa fa-google fa-fw">
                 </i> Login with Google+
             </a>
